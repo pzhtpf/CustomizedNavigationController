@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "OPPInterceptViewController.h"
+#import "AOPInterceptViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -50,6 +51,15 @@
     
         OPPInterceptViewController *interceptViewController = [[OPPInterceptViewController alloc] init];
         [self.navigationController pushViewController:interceptViewController animated:YES];
+    }
+    else if(indexPath.row == 1){
+        
+        AOPInterceptViewController *interceptViewController = [[AOPInterceptViewController alloc] init];
+        UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:interceptViewController];
+        
+        [self.navigationController presentViewController:navigationController animated:YES completion:^{
+            
+        }];
     }
 }
 @end
