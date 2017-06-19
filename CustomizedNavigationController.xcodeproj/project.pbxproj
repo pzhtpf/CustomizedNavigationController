@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		96EF251A2311EB4DA9AEA8E7 /* libPods-CustomizedNavigationController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E93C306C48552E6C558E9044 /* libPods-CustomizedNavigationController.a */; };
+		BA3E98AE1EF6857000A88E64 /* CustomizedNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3E98AD1EF6857000A88E64 /* CustomizedNavigationController.m */; };
+		BA3E98B11EF6B88D00A88E64 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3E98B01EF6B88D00A88E64 /* BaseViewController.m */; };
+		BA3E98B41EF6B9C100A88E64 /* OPPInterceptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3E98B31EF6B9C100A88E64 /* OPPInterceptViewController.m */; };
+		BAF5CF231EF64EEC0063476B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF5CF221EF64EEC0063476B /* main.m */; };
+		BAF5CF261EF64EEC0063476B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF5CF251EF64EEC0063476B /* AppDelegate.m */; };
+		BAF5CF291EF64EEC0063476B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF5CF281EF64EEC0063476B /* ViewController.m */; };
+		BAF5CF2C1EF64EEC0063476B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAF5CF2A1EF64EEC0063476B /* Main.storyboard */; };
+		BAF5CF2E1EF64EEC0063476B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAF5CF2D1EF64EEC0063476B /* Assets.xcassets */; };
+		BAF5CF311EF64EEC0063476B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAF5CF2F1EF64EEC0063476B /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		77751ED4EB01D56BF923E9FA /* Pods-CustomizedNavigationController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomizedNavigationController.release.xcconfig"; path = "Pods/Target Support Files/Pods-CustomizedNavigationController/Pods-CustomizedNavigationController.release.xcconfig"; sourceTree = "<group>"; };
+		900454696ABB20714133564E /* Pods-CustomizedNavigationController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomizedNavigationController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CustomizedNavigationController/Pods-CustomizedNavigationController.debug.xcconfig"; sourceTree = "<group>"; };
+		BA3E98AC1EF6857000A88E64 /* CustomizedNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomizedNavigationController.h; sourceTree = "<group>"; };
+		BA3E98AD1EF6857000A88E64 /* CustomizedNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomizedNavigationController.m; sourceTree = "<group>"; };
+		BA3E98AF1EF6B88D00A88E64 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		BA3E98B01EF6B88D00A88E64 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		BA3E98B21EF6B9C100A88E64 /* OPPInterceptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPPInterceptViewController.h; sourceTree = "<group>"; };
+		BA3E98B31EF6B9C100A88E64 /* OPPInterceptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OPPInterceptViewController.m; sourceTree = "<group>"; };
+		BAF5CF1E1EF64EEC0063476B /* CustomizedNavigationController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomizedNavigationController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAF5CF221EF64EEC0063476B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BAF5CF241EF64EEC0063476B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BAF5CF251EF64EEC0063476B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BAF5CF271EF64EEC0063476B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BAF5CF281EF64EEC0063476B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BAF5CF2B1EF64EEC0063476B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BAF5CF2D1EF64EEC0063476B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BAF5CF301EF64EEC0063476B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BAF5CF321EF64EEC0063476B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E93C306C48552E6C558E9044 /* libPods-CustomizedNavigationController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CustomizedNavigationController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BAF5CF1B1EF64EEC0063476B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96EF251A2311EB4DA9AEA8E7 /* libPods-CustomizedNavigationController.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88DF70BC6F0BEEC4206F9630 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E93C306C48552E6C558E9044 /* libPods-CustomizedNavigationController.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA3E59FE76723DDA8CCC4689 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				900454696ABB20714133564E /* Pods-CustomizedNavigationController.debug.xcconfig */,
+				77751ED4EB01D56BF923E9FA /* Pods-CustomizedNavigationController.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BAF5CF151EF64EEC0063476B = {
+			isa = PBXGroup;
+			children = (
+				BAF5CF201EF64EEC0063476B /* CustomizedNavigationController */,
+				BAF5CF1F1EF64EEC0063476B /* Products */,
+				AA3E59FE76723DDA8CCC4689 /* Pods */,
+				88DF70BC6F0BEEC4206F9630 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BAF5CF1F1EF64EEC0063476B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAF5CF1E1EF64EEC0063476B /* CustomizedNavigationController.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAF5CF201EF64EEC0063476B /* CustomizedNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				BA3E98AC1EF6857000A88E64 /* CustomizedNavigationController.h */,
+				BA3E98AD1EF6857000A88E64 /* CustomizedNavigationController.m */,
+				BA3E98AF1EF6B88D00A88E64 /* BaseViewController.h */,
+				BA3E98B01EF6B88D00A88E64 /* BaseViewController.m */,
+				BA3E98B21EF6B9C100A88E64 /* OPPInterceptViewController.h */,
+				BA3E98B31EF6B9C100A88E64 /* OPPInterceptViewController.m */,
+				BAF5CF241EF64EEC0063476B /* AppDelegate.h */,
+				BAF5CF251EF64EEC0063476B /* AppDelegate.m */,
+				BAF5CF271EF64EEC0063476B /* ViewController.h */,
+				BAF5CF281EF64EEC0063476B /* ViewController.m */,
+				BAF5CF2A1EF64EEC0063476B /* Main.storyboard */,
+				BAF5CF2D1EF64EEC0063476B /* Assets.xcassets */,
+				BAF5CF2F1EF64EEC0063476B /* LaunchScreen.storyboard */,
+				BAF5CF321EF64EEC0063476B /* Info.plist */,
+				BAF5CF211EF64EEC0063476B /* Supporting Files */,
+			);
+			path = CustomizedNavigationController;
+			sourceTree = "<group>";
+		};
+		BAF5CF211EF64EEC0063476B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BAF5CF221EF64EEC0063476B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BAF5CF1D1EF64EEC0063476B /* CustomizedNavigationController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAF5CF351EF64EEC0063476B /* Build configuration list for PBXNativeTarget "CustomizedNavigationController" */;
+			buildPhases = (
+				3694756D7109ACEA02FF6429 /* 📦 Check Pods Manifest.lock */,
+				BAF5CF1A1EF64EEC0063476B /* Sources */,
+				BAF5CF1B1EF64EEC0063476B /* Frameworks */,
+				BAF5CF1C1EF64EEC0063476B /* Resources */,
+				FBFF1760664D8F902422CC5F /* 📦 Embed Pods Frameworks */,
+				071C433286500AA9DAE940F8 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomizedNavigationController;
+			productName = CustomizedNavigationController;
+			productReference = BAF5CF1E1EF64EEC0063476B /* CustomizedNavigationController.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BAF5CF161EF64EEC0063476B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = tianpengfei;
+				TargetAttributes = {
+					BAF5CF1D1EF64EEC0063476B = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = M8REBAFZF5;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BAF5CF191EF64EEC0063476B /* Build configuration list for PBXProject "CustomizedNavigationController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BAF5CF151EF64EEC0063476B;
+			productRefGroup = BAF5CF1F1EF64EEC0063476B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BAF5CF1D1EF64EEC0063476B /* CustomizedNavigationController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BAF5CF1C1EF64EEC0063476B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAF5CF311EF64EEC0063476B /* LaunchScreen.storyboard in Resources */,
+				BAF5CF2E1EF64EEC0063476B /* Assets.xcassets in Resources */,
+				BAF5CF2C1EF64EEC0063476B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		071C433286500AA9DAE940F8 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CustomizedNavigationController/Pods-CustomizedNavigationController-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3694756D7109ACEA02FF6429 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FBFF1760664D8F902422CC5F /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CustomizedNavigationController/Pods-CustomizedNavigationController-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BAF5CF1A1EF64EEC0063476B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA3E98AE1EF6857000A88E64 /* CustomizedNavigationController.m in Sources */,
+				BA3E98B11EF6B88D00A88E64 /* BaseViewController.m in Sources */,
+				BAF5CF291EF64EEC0063476B /* ViewController.m in Sources */,
+				BA3E98B41EF6B9C100A88E64 /* OPPInterceptViewController.m in Sources */,
+				BAF5CF261EF64EEC0063476B /* AppDelegate.m in Sources */,
+				BAF5CF231EF64EEC0063476B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BAF5CF2A1EF64EEC0063476B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAF5CF2B1EF64EEC0063476B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BAF5CF2F1EF64EEC0063476B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAF5CF301EF64EEC0063476B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BAF5CF331EF64EEC0063476B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BAF5CF341EF64EEC0063476B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BAF5CF361EF64EEC0063476B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 900454696ABB20714133564E /* Pods-CustomizedNavigationController.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M8REBAFZF5;
+				INFOPLIST_FILE = CustomizedNavigationController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ougohome.CustomizedNavigationController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BAF5CF371EF64EEC0063476B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77751ED4EB01D56BF923E9FA /* Pods-CustomizedNavigationController.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M8REBAFZF5;
+				INFOPLIST_FILE = CustomizedNavigationController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ougohome.CustomizedNavigationController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BAF5CF191EF64EEC0063476B /* Build configuration list for PBXProject "CustomizedNavigationController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAF5CF331EF64EEC0063476B /* Debug */,
+				BAF5CF341EF64EEC0063476B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAF5CF351EF64EEC0063476B /* Build configuration list for PBXNativeTarget "CustomizedNavigationController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAF5CF361EF64EEC0063476B /* Debug */,
+				BAF5CF371EF64EEC0063476B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BAF5CF161EF64EEC0063476B /* Project object */;
+}

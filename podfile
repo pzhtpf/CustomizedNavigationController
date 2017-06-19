@@ -1,0 +1,9 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '7.0'
+
+pod 'Aspects', '~> 1.4.1'
+
+target :CustomizedNavigationController  do
+# pod 'Kiwi'
+end
+
