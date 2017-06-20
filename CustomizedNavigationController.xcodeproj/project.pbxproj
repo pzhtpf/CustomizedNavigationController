@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E10C4231EF7F3A200AF2ECA /* YDSETBackBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E10C41B1EF7F3A200AF2ECA /* YDSETBackBarButtonItem.m */; };
+		1E10C4241EF7F3A200AF2ECA /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E10C41E1EF7F3A200AF2ECA /* BaseViewController.m */; };
+		1E10C4251EF7F3A200AF2ECA /* CustomizedNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E10C4201EF7F3A200AF2ECA /* CustomizedNavigationController.m */; };
+		1E10C4261EF7F3A200AF2ECA /* OPPInterceptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E10C4221EF7F3A200AF2ECA /* OPPInterceptViewController.m */; };
+		1E10C42C1EF7FD3700AF2ECA /* AOPInterceptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E10C42B1EF7FD3700AF2ECA /* AOPInterceptViewController.m */; };
+		1E4942641EF917AF0004AFE1 /* CustomizedAspects.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4942631EF917AF0004AFE1 /* CustomizedAspects.m */; };
+		1E4942671EF920570004AFE1 /* NSObject+Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4942661EF920570004AFE1 /* NSObject+Aspects.m */; };
+		1E49426A1EF92F060004AFE1 /* AspectsInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4942691EF92F060004AFE1 /* AspectsInfo.m */; };
 		96EF251A2311EB4DA9AEA8E7 /* libPods-CustomizedNavigationController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E93C306C48552E6C558E9044 /* libPods-CustomizedNavigationController.a */; };
-		BA3E98AE1EF6857000A88E64 /* CustomizedNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3E98AD1EF6857000A88E64 /* CustomizedNavigationController.m */; };
-		BA3E98B11EF6B88D00A88E64 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3E98B01EF6B88D00A88E64 /* BaseViewController.m */; };
-		BA3E98B41EF6B9C100A88E64 /* OPPInterceptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3E98B31EF6B9C100A88E64 /* OPPInterceptViewController.m */; };
 		BAF5CF231EF64EEC0063476B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF5CF221EF64EEC0063476B /* main.m */; };
 		BAF5CF261EF64EEC0063476B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF5CF251EF64EEC0063476B /* AppDelegate.m */; };
 		BAF5CF291EF64EEC0063476B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF5CF281EF64EEC0063476B /* ViewController.m */; };
@@ -20,14 +25,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E10C41A1EF7F3A200AF2ECA /* YDSETBackBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDSETBackBarButtonItem.h; sourceTree = "<group>"; };
+		1E10C41B1EF7F3A200AF2ECA /* YDSETBackBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDSETBackBarButtonItem.m; sourceTree = "<group>"; };
+		1E10C41D1EF7F3A200AF2ECA /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		1E10C41E1EF7F3A200AF2ECA /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		1E10C41F1EF7F3A200AF2ECA /* CustomizedNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomizedNavigationController.h; sourceTree = "<group>"; };
+		1E10C4201EF7F3A200AF2ECA /* CustomizedNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomizedNavigationController.m; sourceTree = "<group>"; };
+		1E10C4211EF7F3A200AF2ECA /* OPPInterceptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPPInterceptViewController.h; sourceTree = "<group>"; };
+		1E10C4221EF7F3A200AF2ECA /* OPPInterceptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OPPInterceptViewController.m; sourceTree = "<group>"; };
+		1E10C42A1EF7FD3700AF2ECA /* AOPInterceptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AOPInterceptViewController.h; sourceTree = "<group>"; };
+		1E10C42B1EF7FD3700AF2ECA /* AOPInterceptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AOPInterceptViewController.m; sourceTree = "<group>"; };
+		1E4942621EF917AF0004AFE1 /* CustomizedAspects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomizedAspects.h; sourceTree = "<group>"; };
+		1E4942631EF917AF0004AFE1 /* CustomizedAspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomizedAspects.m; sourceTree = "<group>"; };
+		1E4942651EF920570004AFE1 /* NSObject+Aspects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Aspects.h"; sourceTree = "<group>"; };
+		1E4942661EF920570004AFE1 /* NSObject+Aspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Aspects.m"; sourceTree = "<group>"; };
+		1E4942681EF92F060004AFE1 /* AspectsInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AspectsInfo.h; sourceTree = "<group>"; };
+		1E4942691EF92F060004AFE1 /* AspectsInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AspectsInfo.m; sourceTree = "<group>"; };
 		77751ED4EB01D56BF923E9FA /* Pods-CustomizedNavigationController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomizedNavigationController.release.xcconfig"; path = "Pods/Target Support Files/Pods-CustomizedNavigationController/Pods-CustomizedNavigationController.release.xcconfig"; sourceTree = "<group>"; };
 		900454696ABB20714133564E /* Pods-CustomizedNavigationController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomizedNavigationController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CustomizedNavigationController/Pods-CustomizedNavigationController.debug.xcconfig"; sourceTree = "<group>"; };
-		BA3E98AC1EF6857000A88E64 /* CustomizedNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomizedNavigationController.h; sourceTree = "<group>"; };
-		BA3E98AD1EF6857000A88E64 /* CustomizedNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomizedNavigationController.m; sourceTree = "<group>"; };
-		BA3E98AF1EF6B88D00A88E64 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
-		BA3E98B01EF6B88D00A88E64 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		BA3E98B21EF6B9C100A88E64 /* OPPInterceptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPPInterceptViewController.h; sourceTree = "<group>"; };
-		BA3E98B31EF6B9C100A88E64 /* OPPInterceptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OPPInterceptViewController.m; sourceTree = "<group>"; };
 		BAF5CF1E1EF64EEC0063476B /* CustomizedNavigationController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomizedNavigationController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAF5CF221EF64EEC0063476B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BAF5CF241EF64EEC0063476B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +68,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E10C4191EF7F3A200AF2ECA /* AOP */ = {
+			isa = PBXGroup;
+			children = (
+				1E10C41A1EF7F3A200AF2ECA /* YDSETBackBarButtonItem.h */,
+				1E10C41B1EF7F3A200AF2ECA /* YDSETBackBarButtonItem.m */,
+				1E10C42A1EF7FD3700AF2ECA /* AOPInterceptViewController.h */,
+				1E10C42B1EF7FD3700AF2ECA /* AOPInterceptViewController.m */,
+			);
+			path = AOP;
+			sourceTree = "<group>";
+		};
+		1E10C41C1EF7F3A200AF2ECA /* OPP */ = {
+			isa = PBXGroup;
+			children = (
+				1E10C41D1EF7F3A200AF2ECA /* BaseViewController.h */,
+				1E10C41E1EF7F3A200AF2ECA /* BaseViewController.m */,
+				1E10C41F1EF7F3A200AF2ECA /* CustomizedNavigationController.h */,
+				1E10C4201EF7F3A200AF2ECA /* CustomizedNavigationController.m */,
+				1E10C4211EF7F3A200AF2ECA /* OPPInterceptViewController.h */,
+				1E10C4221EF7F3A200AF2ECA /* OPPInterceptViewController.m */,
+			);
+			path = OPP;
+			sourceTree = "<group>";
+		};
+		1E4942611EF915590004AFE1 /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				1E4942621EF917AF0004AFE1 /* CustomizedAspects.h */,
+				1E4942631EF917AF0004AFE1 /* CustomizedAspects.m */,
+				1E4942651EF920570004AFE1 /* NSObject+Aspects.h */,
+				1E4942661EF920570004AFE1 /* NSObject+Aspects.m */,
+				1E4942681EF92F060004AFE1 /* AspectsInfo.h */,
+				1E4942691EF92F060004AFE1 /* AspectsInfo.m */,
+			);
+			path = Runtime;
+			sourceTree = "<group>";
+		};
 		88DF70BC6F0BEEC4206F9630 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,12 +143,9 @@
 		BAF5CF201EF64EEC0063476B /* CustomizedNavigationController */ = {
 			isa = PBXGroup;
 			children = (
-				BA3E98AC1EF6857000A88E64 /* CustomizedNavigationController.h */,
-				BA3E98AD1EF6857000A88E64 /* CustomizedNavigationController.m */,
-				BA3E98AF1EF6B88D00A88E64 /* BaseViewController.h */,
-				BA3E98B01EF6B88D00A88E64 /* BaseViewController.m */,
-				BA3E98B21EF6B9C100A88E64 /* OPPInterceptViewController.h */,
-				BA3E98B31EF6B9C100A88E64 /* OPPInterceptViewController.m */,
+				1E4942611EF915590004AFE1 /* Runtime */,
+				1E10C4191EF7F3A200AF2ECA /* AOP */,
+				1E10C41C1EF7F3A200AF2ECA /* OPP */,
 				BAF5CF241EF64EEC0063476B /* AppDelegate.h */,
 				BAF5CF251EF64EEC0063476B /* AppDelegate.m */,
 				BAF5CF271EF64EEC0063476B /* ViewController.h */,
@@ -241,12 +290,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA3E98AE1EF6857000A88E64 /* CustomizedNavigationController.m in Sources */,
-				BA3E98B11EF6B88D00A88E64 /* BaseViewController.m in Sources */,
 				BAF5CF291EF64EEC0063476B /* ViewController.m in Sources */,
-				BA3E98B41EF6B9C100A88E64 /* OPPInterceptViewController.m in Sources */,
+				1E4942671EF920570004AFE1 /* NSObject+Aspects.m in Sources */,
+				1E10C4241EF7F3A200AF2ECA /* BaseViewController.m in Sources */,
+				1E49426A1EF92F060004AFE1 /* AspectsInfo.m in Sources */,
+				1E10C4261EF7F3A200AF2ECA /* OPPInterceptViewController.m in Sources */,
+				1E10C4231EF7F3A200AF2ECA /* YDSETBackBarButtonItem.m in Sources */,
+				1E10C42C1EF7FD3700AF2ECA /* AOPInterceptViewController.m in Sources */,
 				BAF5CF261EF64EEC0063476B /* AppDelegate.m in Sources */,
+				1E10C4251EF7F3A200AF2ECA /* CustomizedNavigationController.m in Sources */,
 				BAF5CF231EF64EEC0063476B /* main.m in Sources */,
+				1E4942641EF917AF0004AFE1 /* CustomizedAspects.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
