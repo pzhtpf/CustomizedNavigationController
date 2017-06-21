@@ -8,10 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void(^Block)(id object);
-
 @interface AspectsInfo : NSObject
 
-@property(nonatomic) Block block;
+@property(nonatomic) id instance;
+@property(nonatomic) id pushController;
 
 @end

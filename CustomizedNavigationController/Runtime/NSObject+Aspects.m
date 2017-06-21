@@ -9,11 +9,9 @@
 #import "NSObject+Aspects.h"
 #import <objc/runtime.h>
 
-static char aspect_blockKey;
-
 @implementation NSObject (Aspects)
 
-+(AspectsInfo *)aspect_hookSelector:(SEL)selector block:(void (^)(id))block{
++(void)aspect_hookSelector:(SEL)selector block:(void (^)(AspectsInfo *))block{
     
     Method hookSelector = class_getInstanceMethod(self, selector);
     
@@ -24,33 +22,48 @@ static char aspect_blockKey;
     
     method_exchangeImplementations(hookSelector, customizedSelector);
     
-    AspectsInfo *aspectsInfo = [[AspectsInfo alloc] init];
-    aspectsInfo.block = block;
+    NSString *className = NSStringFromClass(self);
+    NSString *exchangeSelectorName = NSStringFromSelector(selector);
     
-//    objc_setAssociatedObject(self, &aspect_blockKey, aspectsInfo, OBJC_ASSOCIATION_RETAIN);
-    setblock(self, block, s);
+    NSString *blockKey = [NSString stringWithFormat:@"%@_%@",className,exchangeSelectorName];
     
-    return aspectsInfo;
+    AspectsBlock *aspectsBlock = [AspectsBlock shareInstance];  // 利用单例存储block，因为切点是某个类中的某个方法，所以key的值组装成 className_selectorName 的形式
+    [aspectsBlock.block setObject:block forKey:blockKey];
 }
 -(void)customizedSelector:(id)sender{
-    [self customizedSelector:sender];
+    [self customizedSelector:sender];   // 执行系统原有的方法，应为已经被我们替换，所以如此调用
     
-    NSString *selectorName = @"customizedSelector:";
-    SEL s = NSSelectorFromString(selectorName);
+    // 以下为找出存储在单例中的block，回调通知，去执行我们写在block中的代码片段
+    NSString *className = [NSString stringWithFormat:@"%s", object_getClassName(self)];
+    NSString *exchangeSelectorName = NSStringFromSelector(_cmd);
+    NSString *blockKey = [NSString stringWithFormat:@"%@_%@",className,exchangeSelectorName];
     
-    Block block4 = getblock(self, s);
-    AspectsInfo *aspectsInfo = objc_getAssociatedObject(self,&aspect_blockKey);
-    id x = objc_getAssociatedObject(self, &aspect_blockKey);
-    Block block = objc_getAssociatedObject(self, &aspect_blockKey);
+    AspectsBlock *aspectsBlock = [AspectsBlock shareInstance];
+    Block block = [aspectsBlock.block valueForKey:blockKey];
+    
+    AspectsInfo *aspectsInfo = [[AspectsInfo alloc] init];
+    aspectsInfo.instance = self;
+    aspectsInfo.pushController = sender;
+    
     if(block)
-        block(self);
+        block(aspectsInfo);
 }
+@end
 
-static void setblock(NSObject *self,Block block, SEL selector){
-    objc_setAssociatedObject(self,selector, block, OBJC_ASSOCIATION_RETAIN);
+@implementation AspectsBlock
+
++(instancetype)shareInstance{
+    static AspectsBlock *aspectsBlock;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        aspectsBlock = [[AspectsBlock alloc]init];
+    });
+    return aspectsBlock;
 }
-static Block getblock(NSObject *self, SEL selector){
-    Block block = objc_getAssociatedObject(self, selector);
-    return block;
+-(NSMutableDictionary *)block{
+    if(!_block){
+        _block = [NSMutableDictionary new];
+    }
+    return _block;
 }
 @end

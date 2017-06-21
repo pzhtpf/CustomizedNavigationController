@@ -8,6 +8,7 @@
 
 #import "YDSETBackBarButtonItem.h"
 #import <Aspects/Aspects.h>
+#import "NSObject+Aspects.h"
 #import <objc/runtime.h>
 
 @interface YDSETBackBarButtonItem ()
@@ -22,18 +23,24 @@
     self = [super init];
     if(self){
         
-        NSError *error;
-        [UINavigationController aspect_hookSelector:@selector(pushViewController:animated:)
-                                        withOptions:AspectPositionAfter
-                                         usingBlock:^(id <AspectInfo> aspectInfo){
-                                              UINavigationController *navigationController = aspectInfo.instance;
-                                             if(navigationController.viewControllers.count>0){
-                                                 UIViewController *viewController = navigationController.viewControllers[navigationController.viewControllers.count-1];
-                                                 [self setBackBarButtonItem:viewController];
-                                             }
-                                             
-                                         }
-                                              error:&error];
+//        NSError *error;
+//        [UINavigationController aspect_hookSelector:@selector(pushViewController:animated:)
+//                                        withOptions:AspectPositionAfter
+//                                         usingBlock:^(id <AspectInfo> aspectInfo){
+//                                              UINavigationController *navigationController = aspectInfo.instance;
+//                                             if(navigationController.viewControllers.count>0){
+//                                                 UIViewController *viewController = navigationController.viewControllers[navigationController.viewControllers.count-1];
+//                                                 [self setBackBarButtonItem:viewController];
+//                                             }
+//                                             
+//                                         }
+//                                              error:&error];
+        
+        [UINavigationController aspect_hookSelector:@selector(pushViewController:animated:) block:^(AspectsInfo *aspectsInfo) {
+            UIViewController *pushController = aspectsInfo.pushController;
+            if(pushController)
+                [self setBackBarButtonItem:pushController];
+        }];
     }
     return self;
 }

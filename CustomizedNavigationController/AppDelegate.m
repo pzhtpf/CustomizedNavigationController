@@ -7,8 +7,8 @@
 //
 
 #import "AppDelegate.h"
-//#import "YDSETBackBarButtonItem.h"
-#import "NSObject+Aspects.h"
+#import "YDSETBackBarButtonItem.h"
+//#import "NSObject+Aspects.h"
 
 @interface AppDelegate ()
 
@@ -20,11 +20,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-//    [[YDSETBackBarButtonItem alloc] init];
-    
-    [UINavigationController aspect_hookSelector:@selector(pushViewController:animated:) block:^(id object) {
-        
-    }];
+    [[YDSETBackBarButtonItem alloc] init];
     
     return YES;
 }

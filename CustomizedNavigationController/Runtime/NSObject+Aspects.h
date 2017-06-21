@@ -9,8 +9,18 @@
 #import <Foundation/Foundation.h>
 #import "AspectsInfo.h"
 
+typedef void(^Block)(AspectsInfo *aspectsInfo);
+
 @interface NSObject (Aspects)
 
-+(AspectsInfo *)aspect_hookSelector:(SEL)selector block:(Block) block;
++(void)aspect_hookSelector:(SEL)selector block:(Block) block;
+
+@end
+
+@interface AspectsBlock : NSObject
+
+@property(nonatomic) NSMutableDictionary *block;
+
++(instancetype)shareInstance;
 
 @end

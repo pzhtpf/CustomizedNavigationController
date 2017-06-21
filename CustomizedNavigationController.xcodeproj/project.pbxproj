@@ -12,7 +12,6 @@
 		1E10C4251EF7F3A200AF2ECA /* CustomizedNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E10C4201EF7F3A200AF2ECA /* CustomizedNavigationController.m */; };
 		1E10C4261EF7F3A200AF2ECA /* OPPInterceptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E10C4221EF7F3A200AF2ECA /* OPPInterceptViewController.m */; };
 		1E10C42C1EF7FD3700AF2ECA /* AOPInterceptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E10C42B1EF7FD3700AF2ECA /* AOPInterceptViewController.m */; };
-		1E4942641EF917AF0004AFE1 /* CustomizedAspects.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4942631EF917AF0004AFE1 /* CustomizedAspects.m */; };
 		1E4942671EF920570004AFE1 /* NSObject+Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4942661EF920570004AFE1 /* NSObject+Aspects.m */; };
 		1E49426A1EF92F060004AFE1 /* AspectsInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4942691EF92F060004AFE1 /* AspectsInfo.m */; };
 		96EF251A2311EB4DA9AEA8E7 /* libPods-CustomizedNavigationController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E93C306C48552E6C558E9044 /* libPods-CustomizedNavigationController.a */; };
@@ -35,8 +34,6 @@
 		1E10C4221EF7F3A200AF2ECA /* OPPInterceptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OPPInterceptViewController.m; sourceTree = "<group>"; };
 		1E10C42A1EF7FD3700AF2ECA /* AOPInterceptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AOPInterceptViewController.h; sourceTree = "<group>"; };
 		1E10C42B1EF7FD3700AF2ECA /* AOPInterceptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AOPInterceptViewController.m; sourceTree = "<group>"; };
-		1E4942621EF917AF0004AFE1 /* CustomizedAspects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomizedAspects.h; sourceTree = "<group>"; };
-		1E4942631EF917AF0004AFE1 /* CustomizedAspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomizedAspects.m; sourceTree = "<group>"; };
 		1E4942651EF920570004AFE1 /* NSObject+Aspects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Aspects.h"; sourceTree = "<group>"; };
 		1E4942661EF920570004AFE1 /* NSObject+Aspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Aspects.m"; sourceTree = "<group>"; };
 		1E4942681EF92F060004AFE1 /* AspectsInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AspectsInfo.h; sourceTree = "<group>"; };
@@ -95,8 +92,6 @@
 		1E4942611EF915590004AFE1 /* Runtime */ = {
 			isa = PBXGroup;
 			children = (
-				1E4942621EF917AF0004AFE1 /* CustomizedAspects.h */,
-				1E4942631EF917AF0004AFE1 /* CustomizedAspects.m */,
 				1E4942651EF920570004AFE1 /* NSObject+Aspects.h */,
 				1E4942661EF920570004AFE1 /* NSObject+Aspects.m */,
 				1E4942681EF92F060004AFE1 /* AspectsInfo.h */,
@@ -300,7 +295,6 @@
 				BAF5CF261EF64EEC0063476B /* AppDelegate.m in Sources */,
 				1E10C4251EF7F3A200AF2ECA /* CustomizedNavigationController.m in Sources */,
 				BAF5CF231EF64EEC0063476B /* main.m in Sources */,
-				1E4942641EF917AF0004AFE1 /* CustomizedAspects.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
